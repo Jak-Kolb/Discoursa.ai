@@ -21,7 +21,7 @@ export default function HomePage() { // landing page for topic selection
   const handleSaveKey = async () => {
     if (!session?.user?.id) return;
     try {
-      await fetch('http://localhost:8000/user/config', {
+      await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/user/config`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
