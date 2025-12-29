@@ -13,7 +13,7 @@ from google.genai.types import HarmCategory, HarmBlockThreshold, Content, Part, 
 from .retrieval import RetrievedContext, formatContext
 
 PROMPT_DIR = Path(__file__).parent / "prompts"
-DEFAULT_MODEL = "gemini-2.5-flash"
+DEFAULT_MODEL = "gemini-2.0-flash-exp"
 logger = logging.getLogger(__name__)
 
 

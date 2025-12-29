@@ -16,7 +16,7 @@ Discoursa.ai is an intelligent debate platform designed to play "Devil's Advocat
 *   **Frontend**: [Next.js 13](https://nextjs.org/) (App Router), TailwindCSS, React.
 *   **Backend**: [FastAPI](https://fastapi.tiangolo.com/), SQLAlchemy.
 *   **Database**: PostgreSQL 17 with `pgvector` extension (for vector search).
-*   **AI**: OpenAI API (`gpt-4o-mini`).
+*   **AI**: Google Gemini API (`gemini-1.5-flash`).
 
 ## Getting Started
 
@@ -52,7 +52,7 @@ cp .env.example .env
 
 Edit `.env` to include your API keys:
 *   `DATABASE_URL=postgresql://localhost/debate_sessions`
-*   `OPENAI_API_KEY=sk-...` (Required for debate logic)
+*   `GEMINI_API_KEY=AIza...` (Required for debate logic)
 *   `ENCRYPTION_KEY`: Generate one using `openssl rand -hex 32`.
 *   `NEXTAUTH_SECRET`: Generate a random string.
 
